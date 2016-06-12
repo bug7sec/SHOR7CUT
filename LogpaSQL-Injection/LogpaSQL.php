@@ -6,6 +6,7 @@
 @create   : Sat, 11 Jun 2016 10:05 PM
 @Link     : http://facebook.com/bug7sec
 @Spesial  : Tuban Cyber Team , IndoXploit Coders Team & Indonesia Defacer Tersakiti 
+@howto    : https://www.facebook.com/bug7sec/videos/1043910189037406/
 */
     error_reporting(0);
     function login($url,$username,$password,$belakang){
