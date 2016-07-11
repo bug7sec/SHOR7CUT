@@ -6,7 +6,7 @@
 error_reporting(0);
 set_time_limit(0);
 
-$token = "EAAAACZAVC6ygBAOmYD436ZCqYwJKyPQcwv5ZAZCf39gwNM04z3iZB8iSeGzrvEZCYDYpvLfbiQIhBXsJgU5KQACgBLmnZCrjFZB2ZCloQ8yT99XX3RBNnwmmXfZAROZBz06zlc6CzllWU3zEcwLwBwNC2mIB8tL4AOzYEQZD";
+$token = "TOKEN "; // https://github.com/bug7sec/SHOR7CUT/issues
 function post($token){
 	$data = json_decode(file_get_contents("https://graph.facebook.com/v2.3/me?fields=posts&access_token=$token"),true);
 	foreach ($data['posts']['data'] as $key => $value) {
