@@ -6,7 +6,7 @@
 error_reporting(0);
 set_time_limit(0);
 
-$token = "xxxx token";
+$token = "EAAAACZAVC6ygBAOmYD436ZCqYwJKyPQcwv5ZAZCf39gwNM04z3iZB8iSeGzrvEZCYDYpvLfbiQIhBXsJgU5KQACgBLmnZCrjFZB2ZCloQ8yT99XX3RBNnwmmXfZAROZBz06zlc6CzllWU3zEcwLwBwNC2mIB8tL4AOzYEQZD";
 function post($token){
 	$data = json_decode(file_get_contents("https://graph.facebook.com/v2.3/me?fields=posts&access_token=$token"),true);
 	foreach ($data['posts']['data'] as $key => $value) {
@@ -21,5 +21,11 @@ function delete($data,$token){
 	}
 }
 
-delete(post($token),$token);
+$i = 1;
+while ($i <= $i )
+{
+	delete(post($token),$token);
+	$i++;
+}
+
 ?>
